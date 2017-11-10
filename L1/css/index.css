@@ -1,0 +1,220 @@
+body {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: "arial, helvetica, sans-seri";
+	font-size: 12px;
+	margin: 0;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+	text-decoration: none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.w {
+	width: 1190px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/*头*/
+
+.top {
+	height: 40px;
+	line-height: 40px;
+	background-color: #f5f5f5;
+}
+
+.top-1 span a {
+	float: left;
+	margin: 0 3px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.top-1 span:hover a {
+	color: #ff7800;
+	text-decoration: underline;
+}
+
+.top-2 {
+	height: 40px;
+	line-height: 40px;
+	float: right;
+}
+
+.top-2 ul {
+	margin: 0;
+	padding: 0;
+}
+
+.top-2 ul li {
+	color: #000000;
+	float: left;
+	list-style: none;
+	padding: 0 5px;
+}
+
+.top-2 ul li a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.top-2 ul li:hover a {
+	color: #FF7800;
+	text-decoration: underline;
+}
+
+
+/*金秋*/
+
+.jinqiu {
+	height: 70px;
+	background-color: #df2b37;
+}
+
+
+/*logo*/
+
+.logo {
+	padding: 15px 0;
+	height: 120px;
+	/*background-color: aqua;*/
+	box-sizing: border-box;
+}
+
+.logo-2 {
+	padding: 17px 0 0 160px;
+}
+
+.logo #text {
+	float: left;
+	width: 400px;
+	height: 42px;
+	border-color: #FF7800;
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+.logo #btn {
+	float: left;
+	width: 98px;
+	height: 42px;
+	background-color: #FF7800;
+	box-sizing: border-box;
+	border: none;
+	color: #F5F5F5;
+	font-size: 18px;
+}
+
+.logo-2 p a {
+	padding: 0 5px;
+	color: #000000;
+	text-decoration: none;
+}
+
+
+/*导航条*/
+
+.nav {
+	height: 46px;
+	line-height: 46px;
+	background-color: #ff7701;
+	
+}
+
+.nav ul {
+
+	
+}
+	
+
+.nav ul li {
+	
+}
+
+.nav ul li a {
+	font-size: 18px;
+	color: #F5F5F5;
+}
+
+.nav ul li:hover a {
+	color: red;
+}
+
+
+/*轮播*/
+.datu{
+	width: 1190px;
+	height: 422px;
+	margin-top:10px ;
+	position: relative;
+	/*overflow: hidden;*/
+}
+.datu ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+.datu ul li{
+	width: 1190px;
+	height: 420px;
+	float: left;
+}
+.datu ul li img{
+	width: inherit;
+	height: inherit;
+}
+.points{
+	position: absolute;
+    bottom: 0px;
+    left: 50%;
+	
+}
+.points span{
+	display: block;
+	width: 290px;
+	height: 35px;
+	background-color: rgba(0,0,0,0.5);
+	margin-left: 5px;
+	float: left;
+}
+.points span:active{
+	background-color: #626cae;
+}

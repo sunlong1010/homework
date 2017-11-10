@@ -1,0 +1,130 @@
+
+	
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+			
+		<div class="top">
+				<div class="w">
+					<div class="top-1 left">
+						<span><a href="#">关注我们</a><a href="#"><img src="img/weibo_03.gif"/></a><a href="#"><img src="img/qqweibo_05.gif"/></a><a href="#"><img src="img/wx_07.gif"/></a><a href="#"><img src="img/jiantou_09.gif"/></a></span>
+					</div>
+					<div class="top-2 right">
+						<ul>
+							<li><a href="#">登陆</a></li>
+							<li>|</li>
+							<li><a href="#">注册</a></li>
+							<li><a href="#"><img src="img/geren_09.gif"/>个人中心 <img src="img/jiantou_09.gif"/></a></li>
+							<li><a href="#"><img src="img/q2_09.gif"/>我的订单<img src="img/jiantou_09.gif"/></a></li>
+							<li><a href="#"><img src="img/q4_09.gif"/>购物车<img src="img/q5_09.gif "/></a></li>
+							<li><a href="#"><img src="img/q3_09.gif"/>收藏夹</a></li>
+							<li><a href="#">客服：400-888-8888</a></li>
+						</ul>
+					</div>
+					
+				</div>
+		</div>
+		<div class="jinqiu ">
+			<div class="jinqiu-1 w">
+				<img src="img/henfu_03.gif"/>
+			</div>
+		</div>
+		<!--logo-->
+		<div class="logo w">
+			<div class="logo-1 left">
+				<img src="img/logo_06.gif"/>
+			</div>
+			<div class="logo-2 left">
+				<input type="text" name="text" id="text" value="请输入您搜索的关键词........" />
+				<input type="button" id="btn" value="搜索" />
+				<p><a href="#" style="color: #FF7800;">生日礼物</a><a href="#">巧克力</a><a href="#">鲜花</a><a href="#" style="color: #FF7800;">项链/吊坠</a><a href="#">家居装饰</a><a href="#">炭雕摆件</a></p>
+			</div>
+			<div class="logo-3 right">
+				<img src="img/logo-3.gif"/>
+			</div>
+		</div>
+		<!--导航条-->
+				<div class="nav">
+		    <div class="w">
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">个人福利</a></li>
+						<li><a href="#">家庭福利</a></li>
+						<li><a href="#">公司福利</a></li>
+						<li><a href="#">兑换专区</a></li>
+						<li><a href="#">特价专卖</a></li>
+					</ul>
+				</div>
+		    </div>
+		    <!--大图-->
+			    <div class="w">
+			    	
+					    <div class=" images datu">
+					    	<ul id="images">
+					    		<li><img src="img/LB1_02.gif"/></li>
+					    		<li><img src="img/LB2_02.gif"/></li>		    		
+					    		<li><img src="img/LB4_02.gif"/></li>
+					    		<li><img src="img/LB3_02.gif"/></li>
+					    	</ul>
+					    	<div class="points">
+					    		<!--<span>爱心头套毛衣</span>
+					    		<span>爱心头套毛衣</span>
+					    		<span>爱心头套毛衣</span>-->
+					    	</div>
+					    </div>
+			    </div>
+		    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+		    <script type="text/javascript">
+		    	var images = $(".images ul");
+		    	var points = $(".points");
+		    	var imageCount = images.children().length;
+		    	var imageWidht = $(".images").width();
+		    	var first = images.children().first().clone(true);
+		    	var index = 0;
+		    	//在下面添加上span标签
+		    	for (var i=0;i<imageCount; i++) {
+		    		points.append("<span></span>");
+		    		
+		    	}
+		    	//所有的span标签
+		    	var pointAll = points.children();
+		    	pointAll.first().addClass("active");
+		    	images.append(first);
+		    	//设置Ul宽度
+		    	images.width((imageCount+1)*imageWidht);
+		    	//让span标签居中
+		    	points.css("margin-left",-1*points.width()/2+"px");
+		    	
+		    	
+		    	
+		    	
+		    	
+		    	images.append(first);
+		    	
+		    	setInterval(function(){
+		    		index = (index+1)%imageCount;
+		    		if (index==0) {
+		    			images.animate({left:-1*imageWidht*imageCount+"px"},500,function(){
+		    				images.css("left","0")
+		    			});
+		    		} else{
+		    			images.animate({left:-1*imageWidht*index+"px"},500);
+		    		}
+		    		
+		    	},10000);
+		    	
+		    	
+		    	
+		    </script>
+		    	
+		    	
+		    	
+		    	
+	</body>
+</html>
+
